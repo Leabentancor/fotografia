@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+* { margin: 0; padding: 0;box-sizing: border-box;}
+
+ul{ list-style-type: none;}
+
+.header{
+    margin: 5rem;
+}
+.header-todo {
+    margin-bottom: 2rem;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-todo-boda{
+    height: 100vh;
+    margin-bottom: 2rem;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header img{
+    width: 100%;
+}
+.navbar {
+    background-color: #000000;
+}
+.menu {
+    padding: 3rem 4rem;
+    font-size: 1.2rem;
+    display: flex;
+    column-gap: 8rem;
+}
+
+.logo {
+    padding: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link{
+    text-decoration: none;
+    color: #444242;
+}
+
+.link::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #666666;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.quienSoy{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+.quienSoy h3{
+    font-size: 3rem;
+}
+
+.galeria-inicio{
+    display: flex;
+}
+
+.galeria-inicio img{
+    width: 100px;
+    height: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s ease;
+}
+
+.galeria-inicio img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+input, textarea{
+    padding: 8px;
+    font-size: 18px;
+    margin: 3rem;
+    background-color: #66666600;
+    color: rgb(255, 255, 255);
+    border: 1.5px solid #fff;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/img1.jpg");
+
+}
+.boton{
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgba(100, 95, 95, 0.608);
+    text-align: right;
+  
+
+}
+.contactame{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444242;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Nuestras-bodas{
+    font-family: cursive, sans-serif;
+    font-size: 10rem;
+    left: 50%;
+    top: 50%;
+    margin: 2rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    -webkit-text-stroke: 2px #616161;
+    color: transparent;
+    background-image: linear-gradient(#666666, #666666);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -450px 0;
+    animation: backcolor 4s linear infinite alternate;
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.slide img{
+    max-height: 65vh;
+}
+
+.galeria img{
+    margin: 3rem;
+    opacity: 100%;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.6rem;
+}
+.logo-galeria{
+    color: white;
+    padding: 3rem 4rem;
+    font-size: 1.2rem;
+}
+.body-galeria{
+    background-color: #000000;
+}
+
+
+.nosotros{
+    font-family:cursive;
+    width: 100%;
+    text-align: center;
+    top: 10rem;
+    align-items: center;
+    background-color: #9a8c98a1;
+    padding: 3rem;
+
+}
+
+
+.red-social{
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+.h1galeria{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444242;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+    grid-gap: 3px;
+}
+.fotos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeriaAlbum:nth-child(1){
+    grid-column-start: span 2;
+}
+.galeriaAlbum:nth-child(2){
+    grid-row-start: span 2;
+}
+.galeriaAlbum:nth-child(3){
+    grid-column-start: span 2;
+}
+.galeriaAlbum:nth-child(5){
+    grid-column-start: span 2;
+}
+.galeriaAlbum:nth-child(6){
+    grid-column-start: span 2;
+}
+.galeriaAlbum:nth-child(9){
+    grid-column-start: span 2;
+}
+.footer{
+    margin: 2rem 0 2rem 0;
+    background-color:#666666;
+    text-align: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 770px){
+    .album{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .galeriaAlbum:nth-child(2){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 1;
+    }
+    .galeriaAlbum:nth-child(1){
+        grid-row-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 1;
+    }
+    .galeriaAlbum:nth-child(6){
+        grid-column-start: span 3;
+    }
+    .galeriaAlbum:nth-child(7){
+        grid-row-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 2;
+    }
+}
+@media (min-width: 1030px){
+    .album{
+        grid-template-columns: repeat(4, 1fr);
+    }
+        .galeriaAlbum:nth-child(2){
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(7){
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(6){
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(5){
+            grid-column-start: span 3;
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(8){
+            grid-row-start: span 2;
+        
+        }
+        .galeriaAlbum:nth-child(4){
+            grid-row-start: span 2;
+            grid-column-start:span 1;
+        }
+        .galeriaAlbum:nth-child(1){
+            grid-row-start: span 3;
+        }
+        .galeriaAlbum:nth-child(9){
+            grid-row-start: span 2;
+            grid-column-start: span 3;
+        }
+}
+
+@media screen and (max-width:770px) {
+    .Nuestras-bodas{
+        font-size: 6rem;
+    }
+    .galeria-inicio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        ""
+        ""
+        ""
+        ""
+        ""
+        "";
+        justify-items: center;
+    }
+    .galeria-inicio img{
+        width: 300px;
+    }
+    .galeria-inicio img:hover{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
