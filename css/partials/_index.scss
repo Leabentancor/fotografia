@@ -1,0 +1,47 @@
+.contenedor{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.quienSoy{
+    
+    margin: 3rem;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.12);
+    padding: 2rem;
+
+    h3{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.5rem;
+        text-decoration: 4px;
+        text-underline-offset: 4px;
+    }
+    p{
+        font-family: $texto;
+        font-size: 1.2rem;
+    }
+}
+.galeria-inicio{
+    display: flex;
+    padding-top: 4rem;
+
+    & img{
+        width: 100px;
+        height: 300px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .7;
+        transition: .5s ease;
+
+        &:hover{
+            width: 500px;
+            opacity: 1;
+            filter: contrast(120%);
+            max-width: 65vh;
+        }
+    }
+}
+.fondo{
+    width: 100%
+}
+

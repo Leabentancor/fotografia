@@ -1,0 +1,88 @@
+@media (min-width: 770px){
+    .album{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .galeriaAlbum:nth-child(2){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 1;
+    }
+    .galeriaAlbum:nth-child(1){
+        grid-row-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 1;
+    }
+    .galeriaAlbum:nth-child(6){
+        grid-column-start: span 3;
+    }
+    .galeriaAlbum:nth-child(7){
+        grid-row-start: span 2;
+    }
+    .galeriaAlbum:nth-child(4){
+        grid-column-start: span 2;
+    }
+}
+@media (min-width: 1030px){
+    .album{
+        grid-template-columns: repeat(4, 1fr);
+    }
+        .galeriaAlbum:nth-child(2){
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(7){
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(6){
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(5){
+            grid-column-start: span 3;
+            grid-row-start: span 2;
+        }
+        .galeriaAlbum:nth-child(8){
+            grid-row-start: span 2;
+        
+        }
+        .galeriaAlbum:nth-child(4){
+            grid-row-start: span 2;
+            grid-column-start:span 1;
+        }
+        .galeriaAlbum:nth-child(1){
+            grid-row-start: span 3;
+        }
+        .galeriaAlbum:nth-child(9){
+            grid-row-start: span 2;
+            grid-column-start: span 3;
+        }
+}
+
+@media screen and (max-width:770px) {
+    .Nuestras-bodas{
+        font-size: 6rem;
+    }
+    .galeria-inicio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        ""
+        ""
+        ""
+        ""
+        ""
+        "";
+        justify-items: center;
+    }
+    .galeria-inicio img{
+        width: 300px;
+    }
+    .galeria-inicio img:hover{
+        width: 90%;
+        height: 90%;
+    }
+    
+}

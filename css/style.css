@@ -116,7 +116,6 @@ input, textarea{
     color: rgb(255, 255, 255);
     background-color: rgba(100, 95, 95, 0.608);
     text-align: right;
-  
 
 }
 .contactame{
@@ -140,7 +139,7 @@ input, textarea{
     color: transparent;
     background-image: linear-gradient(#666666, #666666);
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    -webkit-background-clip:text;
     background-position: -450px 0;
     animation: backcolor 4s linear infinite alternate;
 }
