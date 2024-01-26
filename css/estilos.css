@@ -41,7 +41,8 @@
   background-color: rgba(81, 78, 78, 0.5529411765);
   border-radius: 10px;
 }
-.nav-link .active {
+
+.active {
   background-color: rgba(81, 78, 78, 0.5529411765);
   border-radius: 10px;
   color: rgb(233, 230, 230) !important;
