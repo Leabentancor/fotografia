@@ -11,18 +11,18 @@
     font-family: "Lato", sans-serif;
     font-size: 10px;
     position: absolute;
-    padding-bottom: 3rem;
 }
 h4 {
     font-size: 14px;
     letter-spacing: 0.5px;
     text-align: center;
     margin-top: 8rem;
+    letter-spacing: 1px;
     }
 .footer-text{
     font-size: 10px;
     text-align: center;
-}
+    }
 .card {
     width: 100%;
     background-color: $colorFooter;
@@ -45,7 +45,7 @@ h4 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition-duration: .3s;
+    transition-duration: solid .3s;
     }
 
     /* instagram*/
@@ -99,4 +99,4 @@ h4 {
     transform: translateY(0);
     opacity: 1;
     }
-}
+} 
