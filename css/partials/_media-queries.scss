@@ -24,6 +24,7 @@
     .galeriaAlbum:nth-child(4){
         grid-column-start: span 2;
     }
+    
 }
 @media (min-width: 1030px){
     .album{
@@ -58,6 +59,7 @@
             grid-row-start: span 2;
             grid-column-start: span 3;
         }
+        
 }
 
 @media screen and (max-width:770px) {
@@ -85,4 +87,12 @@
         height: 90%;
     }
     
+}
+@media screen and (max-width:470px){
+    .logo{
+        font-size:25px;
+    }
+    .navbar-nav{
+        height: 10px !important;
+    }
 }
