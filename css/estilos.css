@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-color: #000 #444;
 }
 
 * ul {
@@ -34,12 +35,16 @@
 
 .navbar-nav {
   align-items: center;
-  background: none !important;
 }
 
+.nav-link {
+  border-radius: 10px;
+  padding-inline: 30px;
+}
 .nav-link:hover {
   background-color: rgba(81, 78, 78, 0.5529411765);
   border-radius: 10px;
+  justify-content: center;
 }
 
 .active {
@@ -436,14 +441,38 @@ h4 {
   }
   .galeria-inicio img {
     width: 300px;
+    height: 200px;
   }
   .galeria-inicio img:hover {
-    width: 90%;
-    height: 90%;
+    width: 400px;
   }
 }
 @media screen and (max-width: 470px) {
   .logo {
     font-size: 25px;
+  }
+  .quienSoy {
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-bottom: 8rem;
+    width: 360px;
+    height: 500px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 60%, transparent 99%);
+            mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 60%, transparent 99%);
+  }
+  .quienSoy h3 {
+    font-size: 3rem;
+  }
+  .quienSoy p {
+    font-size: 16px;
+  }
+  .galeria-inicio img {
+    width: 300px;
+    height: 200px;
+  }
+  .galeria-inicio img:hover {
+    width: 370px;
   }
 }/*# sourceMappingURL=estilos.css.map */
