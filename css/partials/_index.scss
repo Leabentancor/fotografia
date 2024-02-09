@@ -3,9 +3,9 @@
     
     margin: 1rem;
     font-style: italic;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.12);
-    padding: 2rem;
+    text-align: center;background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.22) 0%, rgba(0,0,0,0.22) 85%, rgba(0,0,0,0.22) 100%);
+    padding: 3rem;
 
     h3{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -17,7 +17,12 @@
         font-family: $texto;
         font-size: 1.2rem;
     }
+    em{
+        text-decoration: rgb(0, 0, 0) underline;
+    }
 }
+
+
 .galeria-inicio{
     display: flex;
     padding-top: 4rem;

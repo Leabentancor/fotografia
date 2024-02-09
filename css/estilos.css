@@ -57,8 +57,9 @@
   margin: 1rem;
   font-style: italic;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.12);
-  padding: 2rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 0, 0, 0.22) 85%, rgba(0, 0, 0, 0.22) 100%);
+  padding: 3rem;
 }
 .quienSoy h3 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -70,6 +71,10 @@
 .quienSoy p {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+}
+.quienSoy em {
+  -webkit-text-decoration: rgb(0, 0, 0) underline;
+          text-decoration: rgb(0, 0, 0) underline;
 }
 
 .galeria-inicio {
@@ -99,7 +104,6 @@
 .header-todoBoda {
   height: 60vh;
   background-color: #878484;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nuestras-bodas {
@@ -125,7 +129,7 @@
 
 .slide img {
   width: auto;
-  height: 400px;
+  max-height: 400px;
 }
 
 .h1galeria {
@@ -283,7 +287,7 @@ h4 {
   font-size: 14px;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 7rem;
   letter-spacing: 1px;
 }
 
@@ -299,6 +303,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   padding-top: 45px;
+  padding-bottom: 0;
   border-radius: 0;
   gap: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
@@ -474,5 +479,8 @@ h4 {
   }
   .galeria-inicio img:hover {
     width: 370px;
+  }
+  .nuestras-bodas {
+    font-size: 7rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
